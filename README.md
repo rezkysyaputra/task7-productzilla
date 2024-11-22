@@ -1,50 +1,10 @@
-# React + TypeScript + Vite
+# Dark mode
+1. Home page
+![screencapture-localhost-5173-2024-11-22-20_09_10](https://github.com/user-attachments/assets/84d931dc-221f-4d14-b7c3-98e944c95304)
+2. Projects page
+![screencapture-localhost-5173-contact-2024-11-22-20_08_50](https://github.com/user-attachments/assets/f0982f20-c94e-4fa7-bb3a-b5bdf727c25e)
+3. Contact Page
+![screencapture-localhost-5173-projects-2024-11-22-20_08_10](https://github.com/user-attachments/assets/9faee7c8-fc41-48b1-9b43-6c962da952e9)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+#Light Mode
+![screencapture-localhost-5173-2024-11-22-20_07_37](https://github.com/user-attachments/assets/4b800040-626a-4c2a-8560-1dedc2b0dea6)
