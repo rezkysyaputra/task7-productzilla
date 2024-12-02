@@ -1,6 +1,6 @@
 import { Github, Instagram, Linkedin } from 'lucide-react';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import LinkMediaSocial from './LinkSocialMedia';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -15,37 +15,23 @@ const Footer: React.FC = () => {
           <nav aria-label='Social media links'>
             <ul className='flex space-x-4'>
               <li>
-                <Link
-                  to='https://github.com/rezkysyaputra'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors'
-                  aria-label='GitHub profile'
-                >
+                <LinkMediaSocial to={'https://github.com/rezkysyaputra'}>
                   <Github className='w-6 h-6' />
-                </Link>
+                </LinkMediaSocial>
               </li>
               <li>
-                <Link
-                  to='https://instagram.com/rezky.s_'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors'
-                  aria-label='Instagram profile'
-                >
+                <LinkMediaSocial to={'https://instagram.com/rezky.s_'}>
                   <Instagram className='w-6 h-6' />
-                </Link>
+                </LinkMediaSocial>
               </li>
               <li>
-                <Link
-                  to='https://linkedin.com/in/Muh. Rezky Syaputra'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors'
-                  aria-label='LinkedIn profile'
+                <LinkMediaSocial
+                  to={
+                    'https://www.linkedin.com/in/muh-rezky-syaputra-a65a42250'
+                  }
                 >
                   <Linkedin className='w-6 h-6' />
-                </Link>
+                </LinkMediaSocial>
               </li>
             </ul>
           </nav>
