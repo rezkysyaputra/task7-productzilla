@@ -15,7 +15,9 @@ const mockProject = {
 describe('ProjectCard Component', () => {
   test('renders project details correctly', () => {
     render(
-      <BrowserRouter>
+      <BrowserRouter
+        future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+      >
         <ProjectCard project={mockProject} />
       </BrowserRouter>
     );
@@ -31,7 +33,9 @@ describe('ProjectCard Component', () => {
 
   test('renders technologies used', () => {
     render(
-      <BrowserRouter>
+      <BrowserRouter
+        future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+      >
         <ProjectCard project={mockProject} />
       </BrowserRouter>
     );
@@ -43,7 +47,9 @@ describe('ProjectCard Component', () => {
 
   test('renders GitHub link correctly', () => {
     render(
-      <BrowserRouter>
+      <BrowserRouter
+        future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+      >
         <ProjectCard project={mockProject} />
       </BrowserRouter>
     );

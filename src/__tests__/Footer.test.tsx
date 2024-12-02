@@ -7,7 +7,9 @@ describe('Footer Component', () => {
   test('renders the current year', () => {
     const currentYear = new Date().getFullYear();
     render(
-      <BrowserRouter>
+      <BrowserRouter
+        future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+      >
         <Footer />
       </BrowserRouter>
     );

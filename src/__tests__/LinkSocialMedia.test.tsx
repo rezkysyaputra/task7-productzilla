@@ -5,7 +5,9 @@ import LinkMediaSocial from '../components/LinkSocialMedia';
 describe('LinkMediaSocial Component', () => {
   test('renders link with children', () => {
     render(
-      <MemoryRouter>
+      <MemoryRouter
+        future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+      >
         <LinkMediaSocial to='https://github.com'>GitHub</LinkMediaSocial>
       </MemoryRouter>
     );
@@ -15,7 +17,9 @@ describe('LinkMediaSocial Component', () => {
 
   test('has correct href attribute', () => {
     render(
-      <MemoryRouter>
+      <MemoryRouter
+        future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+      >
         <LinkMediaSocial to='https://github.com'>GitHub</LinkMediaSocial>
       </MemoryRouter>
     );

@@ -1,4 +1,3 @@
-import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -7,7 +6,7 @@ import '@testing-library/jest-dom';
 describe('Navbar Component', () => {
   test('renders Navbar with links', () => {
     render(
-      <Router>
+      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Navbar />
       </Router>
     );
@@ -19,7 +18,7 @@ describe('Navbar Component', () => {
 
   test('toggles menu on mobile', () => {
     render(
-      <Router>
+      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Navbar />
       </Router>
     );
